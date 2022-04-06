@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madhu Sharma</title>
+  </head>
+  <body>
+    <div class="whole-website" id ="whole-website">
+      <nav>
+        
+        <div class="header" id="header">
+          <div id="Name">
+            <a href="#whole-website"><span>Madhu Sharma</span></a>
+          </div>
+          <div class = "top_right_header">
+            <a href= "#About-me"><span>About</span></a>
+            <a href= "#Work"><span>Work</span></a>
+            <a href = "#Featured-Projects"><span>Projects</span></a>
+            <a href = "./resume.pdf"> <span>Resume</span></a> 
+            <span></span><span></span>
+          </div>
+        </div>
+      </nav>
+      <div class="front">
+        <!-- TODO: Center vanta-canvas in front so that the animation and my name display is in the center of the page when the user starts it up -->
+        <div id="vanta-canvas">
+          <div class="introduction">
+            <h1>My name is</h1>
+            <h2 id="typewriter-name"></h2>
+            <h2 id="typewriter-activities">I am a </h2>
+          </div>
+          <script type="module" src="/main.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+          <script type="text/javascript">
+            VANTA.GLOBE({
+              el: "#vanta-canvas",
+              mouseControls: true,
+              touchControls: true,
+              gyroControls: false,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              scale: 1.00,
+              scaleMobile: 1.00,
+              color: 0xff0000,
+              color2: 0xff0000,
+              backgroundColor: 0x0
+            })
+          </script>
+        </div>
+      </div>
+        
+      <div id = "About-me" class = "About-me">
+        <div class = "About-me-title">
+          <h3>About me:</h3>
+          <div class = "About-me-content">
+            <h4>Hey! My name is Madhu and I enjoy designing and developing software to be used. Technology has been advancing every day and we have yet to explore the limit for it. I aspire to creatively use technology to solve problems and improve the quality of life of everyone. People should be able to spend time focusing on making themselves happy rather than spending extra time waiting for slow technology </h4> 
+            <br>
+            <h4>Here are some technologies that I have been working with recently</h4>
+          </div>
+        </div>
+        <div class = "About-me-photo" style="width:2000px;">
+          <img src="pfp2.jpg">
+        </div>
+        <div>
+          <h1 id="typewriter"></h1>
+        </div>
+      </div>
+      <br>
+      <hr style="width:50%">
+      <br><br>
+      <div id = "Work" class = "Where-I-Have-Worked">
+        <div class = "Where-I-Have-Worked-title">
+          <h3>Where I've Worked:</h3>
+        </div>
+        <div class = "Where-I-Have-Worked-title">
+          <button id="btn1" class = "first">Amazon</button>
+          <button id="btn2" class = "first">Commit the Change</button>
+          <button id="btn3" class = "first">Delta System & Software, Inc</button>
+          <button id="btn4" class = "first">iCode</button>
+        </div>
+        <div class = "Where-I-Have-Worked-content" id="jobDescription">
+          <h6>Software Dev Engineer Intern @ Amazon</h6>
+          <h7>June 2022 - September 2022</h7>
+          <br><br>
+          <ul>
+            <li>To be determined</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <br><br><br>
+      
+      <div id = "Featured-Projects" class = "Featured-Projects">
+        <div class = "Where-I-Have-Worked-title">
+          <h3>Featured Projects:</h3>
+        </div>
+        <div class = "Featured-Projects-Card">
+          <div style="max-width:300px;">
+            <img class = "project-1" src="project1.jpg">
+          </div>
+          <div class = "description">
+            <h8>RetnoScan</h8>
+            <h4>Used machine learning in an Android application to detect healthy and Retinopathic eye images with a feature to share results with a doctor. Presented project to students at IB World School at Huffman Elementary to help them understand the application of innovating in society</h4>
+            <div class = "container">
+              <a href="https://d2k.rice.edu/news/congratulations-hackrice-x-2020-winners"><button class = "first" style="margin:0px;">View</button></a>
+              <h5>Android Studio, Scikit-learn, Keras, Tensorflow</h5>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class = "Featured-Projects-Card">
+          <div class = "description">
+            <h8>FaceAnalyzer</h8>
+            <div class="project-description">
+              <h4>Created a web application to analyze a students’ face, provide real-time statistics of mood and attention, 
+                and play an audio cue if the student is distracted for too long. Improves student productivity levels.</h4>
+            </div>
+            <div class = "container">
+              <a href ="https://github.com/KanishkGar/FaceAnalyzer"><button class = "first" style="margin:0px;">View</button></a>
+              <h5>Affectivia API, Javascript, HTML, CSS</h5>
+            </div>
+          </div>
+          <div style="max-width:300px;">
+            <img src="project2.jpg">
+          </div> 
+        </div>
+        <!-- <br>
+        <div class = "Featured-Projects-Card">
+          <div style="max-width:300px;">
+            <img src="pfp3.jfif">
+          </div>
+          <div class = "description">
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor est enim, pharetra mollis nulla laoreet sit amet. In tristique aliquam magna, sed interdum sapien efficitur vitae. Vivamus viverra tincidunt augue bibendum venenatis. Nunc sed lacus tempus tellus lobortis volutpat. Sed sit amet fermentum purus, vel tincidunt dui. </h4>
+            <div class = "container">
+              <button class = "first" style="margin:0px;">View</button>
+              <h5>React, Javascript, CSS</h5>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
