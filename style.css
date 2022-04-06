@@ -127,6 +127,15 @@ li::before {
   padding-top: 18%
 }
 
+.skills-list {
+  columns: 200px 2;
+  /* gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none; */
+}
+
 .introduction h2::after {
   content: "";
   width: 3px;
