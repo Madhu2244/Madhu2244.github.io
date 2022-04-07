@@ -1,5 +1,3 @@
-import './style.css'
-
 function typewriter(element, text, delay = 150) 
 {
   for (let i = 0; i < text.length; i++) 
@@ -62,7 +60,7 @@ function run(){
     <ul>
       <li>Currently working with Abound Food Care to reduce food waste and insecurity by creating a digital registration system to better connect their volunteers and engage them in organizational events using React, PostgreSQL, Express, and Node.js</li>
       <li>Assess problems, develop, and maintain high quality software for non-profit organizations to help increase productivity and save time</li>
-      <li>Aspiring to become a Technical Lead for a non-profit project in the upcoming year</li>
+      <li>Aspiring to become a Technical Lead for a non-profit organization project in the upcoming year</li>
     </ul>`
   });
 
