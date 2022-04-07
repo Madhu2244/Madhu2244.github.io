@@ -347,3 +347,10 @@ button:hover, button:focus {
     flex-direction: column;
   }
 }
+
+.social-media {
+  display: flex;
+  justify-content: center;  
+  height: 75px;
+  gap: 20px;
+}
