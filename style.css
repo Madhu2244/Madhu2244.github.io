@@ -7,8 +7,8 @@
 }
 
 body {
-  /* background: black; */
-  background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949;
+  background: rgba(69,79,100,255);
+  /* background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949; */
 }
 
 a {
@@ -40,9 +40,9 @@ h2 {
 
 h3 {
   /* font-family: Arial; */
-  padding: 20px;
+  padding: 25px;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 850;
 }
 
 h4 {
@@ -57,7 +57,7 @@ h5 {
 }
 
 h6 {
-  color: #D3D3D3;
+  color: white;
   font-size: 35px;
 }
 
@@ -81,6 +81,7 @@ ul {
   padding: 0 1em;
   list-style: none;
 }
+
 li {
   font-size: 23px;
   color: white;
@@ -94,7 +95,7 @@ hr {
 
 li::before { 
   content: "";
-  border-color: transparent greenyellow;
+  border-color: transparent #e74c3c;
   border-style: solid;
   border-width: 0.35em 0 0.35em 0.45em;
   display: block;
@@ -120,7 +121,7 @@ li::before {
   position: fixed;
 }
 
-#Name {
+.Name {
   color: red;
 }
 
@@ -201,7 +202,14 @@ li::before {
 
 .top_right_header {
   display: flex;
+  /* justify-content: flex-end; */
+  /* flex-direction: row-reverse; */
   gap: 20px;
+}
+
+.top_left_header {
+  display: flex;
+  /* padding: 20px; */
 }
 
 .animation-bg {
@@ -298,7 +306,7 @@ button {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 700;
 }
 button:hover, button:focus {
@@ -307,6 +315,7 @@ button:hover, button:focus {
 }
 
 .first {
+  font-family: montserrat;
   -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
@@ -346,4 +355,11 @@ button:hover, button:focus {
   div {
     flex-direction: column;
   }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;  
+  height: 75px;
+  gap: 20px;
 }
