@@ -41,10 +41,12 @@ h2 {
 }
 
 h3 {
-  /* font-family: Arial; */
+  font-family: 'Butler';
+  font-weight: 900;
+  font-style: normal;
   padding: 25px;
   font-size: 45px;
-  font-weight: 850;
+  /* font-weight: 850; */
 }
 
 h4 {
@@ -254,7 +256,9 @@ li::before {
 .About-me {
   display: flex;
   justify-content: space-between;
-  padding: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  /* padding: 10vh; */
   /* border: 1px solid white; */
   margin: auto;
   max-width: 1000px;
