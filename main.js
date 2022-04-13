@@ -14,7 +14,7 @@ typewriter(el, "Madhu Sharma");
 
 function typewriter_cycle(element, text, delay = 150) 
 {
-  let tick = 0;
+  let tick = 12;
   while (tick < 20000)
   {
     for (let j = 0; j < text.length; j++)
