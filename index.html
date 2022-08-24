@@ -21,7 +21,7 @@
             <a href= "#About-Me"><span>About</span></a>
             <a href= "#Work"><span>Work</span></a>
             <a href = "#Featured-Projects"><span>Projects</span></a>
-            <a href = "./resume.pdf"> <span>Resume</span></a> 
+            <a href = "./resume.pdf" target="_blank" rel="noopener noreferrer"> <span>Resume</span></a> 
             <span></span><span></span>
           </div>
         </div>
@@ -30,9 +30,12 @@
         <!-- TODO: Center vanta-canvas in front so that the animation and my name display is in the center of the page when the user starts it up -->
         <div id="vanta-canvas">
           <div class="introduction">
-            <h1>My name is</h1>
+            <h9>My name is</h9>
             <h2 id="typewriter-name"></h2>
             <h2 id="typewriter-activities">I am a </h2>
+          </div>
+          <div class="view-work">
+            <a href= "#About-Me"><h10>&#8595 Check out my work! &#8595</h10> </a>
           </div>
           <!-- <script type="module" src="/main.js"></script> -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
@@ -52,12 +55,15 @@
               backgroundColor: 0x0
             })
           </script>
+          
         </div>
       </div>
         
       <div id = "About-me" class = "About-me">
-        <div class = "About-me-title" id= "About-Me">
-          <h3>About me:</h3>
+        <div>
+          <div class = "About-me-title" id= "About-Me">
+            <h3>About me:</h3>
+          </div>
           <div class = "About-me-content">
             <h4>Hey! My name is Madhu and I am a student at the University of California Irvine.</h4>
             <br>
@@ -89,7 +95,7 @@
           <h3>Where I've Worked:</h3>
         </div>
         <div class = "Where-I-Have-Worked-title">
-          <button id="btn1" class = "first">Amazon</button>
+          <button id="btn1" class = "first" >Amazon</button>
           <button id="btn2" class = "first">Commit the Change</button>
           <button id="btn3" class = "first">Delta System</button>
           <button id="btn4" class = "first">iCode</button>
@@ -118,7 +124,7 @@
             <h8>RetnoScan</h8>
             <h4>Used machine learning in an Android application to detect healthy and Retinopathic eye images with a feature to share results with a doctor. Presented project to students at IB World School at Huffman Elementary to help them understand the application of innovating in society</h4>
             <div class = "container">
-              <a href="https://d2k.rice.edu/news/congratulations-hackrice-x-2020-winners"><button class = "first" style="margin:0px;">View</button></a>
+              <a href="https://d2k.rice.edu/news/congratulations-hackrice-x-2020-winners" target="_blank" rel="noopener noreferrer"><button class = "first" style="margin:0px;">View</button></a>
               <h5>Android Studio, Scikit-learn, Keras, Tensorflow</h5>
             </div>
           </div>
@@ -135,7 +141,7 @@
                 and play an audio cue if the student is distracted for too long. Improves student productivity levels.</h4>
             </div>
             <div class = "container">
-              <a href ="https://github.com/KanishkGar/FaceAnalyzer"><button class = "first" style="margin:0px;">View</button></a>
+              <a href ="https://github.com/KanishkGar/FaceAnalyzer" target="_blank" rel="noopener noreferrer"><button class = "first" style="margin:0px;">View</button></a>
               <h5>Affectivia API, Javascript, HTML, CSS</h5>
             </div>
           </div>
@@ -145,10 +151,10 @@
 
 
     <div class = "social-media">
-      <a href = "https://github.com/Madhu2244/"> 
+      <a href = "https://github.com/Madhu2244/" target="_blank" rel="noopener noreferrer"> 
         <i class="fa fa-github" style="font-size:48px"></i>
       </a>
-      <a href = "https://www.linkedin.com/in/madhuxsharma/"> 
+      <a href = "https://www.linkedin.com/in/madhuxsharma/" target="_blank" rel="noopener noreferrer"> 
         <i class="fa fa-linkedin" style="font-size:48px"></i>
       </a>
     </div>
