@@ -49,7 +49,8 @@ function run(){
     <h7>June 2022 - September 2022</h7>
     <br><br>
     <ul>
-      <li>To be determined</li>
+      <li>Designed and developed features on an internal application to help different product leads across Amazon plan and execute promotions</li>
+      <li>Improved API logging and unit testing coverage to assist developers in understanding errors</li>
     </ul>`
   });
 
