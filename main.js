@@ -50,7 +50,8 @@ function run(){
     <br><br>
     <ul>
       <li>Designed and developed features on an internal application to help different product leads across Amazon plan and execute promotions</li>
-      <li>Improved API logging and unit testing coverage to assist developers in understanding errors</li>
+      <li>Improved API logging to assist developers in understanding errors </li>
+      <li>Wrote unit tests and integration tests to improve coverage</li>
     </ul>`
   });
 
