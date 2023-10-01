@@ -66,13 +66,7 @@ h6 {
   font-weight: 0;
 }
 
-h7 {
-  font-family: 'Play';
-  color: white;
-  font-size: 20px;
-}
-
-h8 {
+p {
   font-family: 'Play';
   color: white;
   font-size: 33px;
@@ -231,6 +225,7 @@ li::before {
 .Where-I-Have-Worked-title {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .About-me {
@@ -254,10 +249,9 @@ li::before {
 }
 
 .Featured-Projects {
-  padding: 20px;
-  margin: 10px;
-}
+  padding: 50px 0;
 
+}
 img {
   object-fit: cover;
   max-width: 100%;
@@ -302,22 +296,45 @@ button:hover, button:focus {
   -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
+
 .first:hover {
   box-shadow: 0 0 40px 40px #C52233 inset;
+  color: white;
 }
+
 
 .Featured-Projects-Card {
   border-radius: 25px;
-  border-style: solid;
-  border-color: #C52233;
-  border-width: 5px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   max-width: 1080px;
   margin: auto;
-  height: 300px;
+  margin-bottom: 30px;
+  background-color: #111; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.Featured-Projects-Card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.Featured-Projects-Card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  border-radius: 28px;
+  border: 1px solid rgba(197,34,51,0.2); 
+  z-index: -1;
+}
+
+
+
 
 .description {
   width: 70%;
@@ -333,8 +350,19 @@ button:hover, button:focus {
 }
 
 @media (max-width: 768px) {
-  div {
+  .Featured-Projects-Card {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .description {
+    width: 100%;
+    order: 2;
+  }
+
+  .container {
+    margin-top: 20px;
   }
 }
 
@@ -344,3 +372,4 @@ button:hover, button:focus {
   height: 75px;
   gap: 20px;
 }
+
