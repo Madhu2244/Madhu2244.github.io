@@ -203,27 +203,7 @@ hr {
 
 /* EMD OF INTRO */
 
-/* WHERE IVE WORKED */
-
-.Where-I-Have-Worked {
-  margin: auto;
-  padding-top: 25px;
-  height: 650px;
-  max-width: 1000px;
-}
-
-.Where-I-Have-Worked-content {
-  width: 75%;
-  margin: auto;
-}
-
-.Where-I-Have-Worked-title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-/* NEW WHERE IVED WORKED */
+/* WHERE IVED WORKED */
 
 .section {
   color: #fff;
@@ -267,50 +247,12 @@ hr {
   /* Style the company details here */
 }
 
-/* END WHERE IVE WORKED */
+/* END WHERE IVED WORKED */
+
+/* FEATURED PROJECTS */
 
 .Featured-Projects {
   padding: 50px 0;
-}
-
-img {
-  object-fit: cover;
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-  border-radius: 25px;
-}
-
-button {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 2px solid #C52233;
-  border-radius: 0.6em;
-  color: #C52233;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-button:hover, button:focus {
-  color: #fff;
-  outline: 0;
 }
 
 .first {
@@ -322,7 +264,6 @@ button:hover, button:focus {
   box-shadow: 0 0 40px 40px #C52233 inset;
   color: white;
 }
-
 
 .Featured-Projects-Card {
   border-radius: 25px;
@@ -401,3 +342,47 @@ button:hover, button:focus {
     opacity: 0;
   }
 }
+
+/* UTILITIES */
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  border-radius: 25px;
+}
+
+button {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #C52233;
+  border-radius: 0.6em;
+  color: #C52233;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+button:hover, button:focus {
+  color: #fff;
+  outline: 0;
+}
+
+/* UTILITIES END */
