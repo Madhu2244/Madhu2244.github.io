@@ -101,4 +101,16 @@ window.onload = () => {
 
   // Call the handleScroll function to set up the scroll event listener
   handleScroll();
+
+  const button = document.getElementById('retnoscan');
+
+  button.addEventListener('click', function() {
+    window.open('https://d2k.rice.edu/news/congratulations-hackrice-x-2020-winners', '_blank');
+  });
+  
+  const button1 = document.getElementById('faceanalyzer');
+  
+  button1.addEventListener('click', function() {
+    window.open('https://devpost.com/software/faceanalyzer-sg0aht', '_blank');
+  });
 };
