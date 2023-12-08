@@ -7,21 +7,16 @@
 
 body {
   background: rgb(0,0,0);
+  overflow-x: hidden;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, a {
   font-weight: 400;
   color: #ffffff;
 }
 
 h1 {
   font-family: 'Nobile';
-  color: #ffffff;
   padding: 20px;
   margin: 0px;
   border: 0;
@@ -66,6 +61,10 @@ h6 {
   font-weight: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-family: 'Play';
   color: white;
@@ -97,7 +96,7 @@ hr {
   border-color: #44FFD1;
 }
 
-li::before { 
+.bullet-point::before { 
   content: "";
   border-color: transparent #C52233;
   border-style: solid;
@@ -110,48 +109,7 @@ li::before {
   position: relative;
 }
 
-
-.whole-website {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin: auto;
-  overflow: hidden;
-}
-
-.content {
-  padding: 0;
-  margin: 0px;
-  position: fixed;
-}
-
-.Name {
-  color: #C52233;
-}
-
-.introduction {
-  padding-left: 10%;
-  padding-top: 18%
-}
-
-.skills-list {
-  columns: 200px 2;
-}
-
-.introduction h2::after {
-  content: "";
-  width: 3px;
-  height: 60px;
-  background: white;
-  display: inline-block;
-  animation: cursor-blink 1.5s steps(2) infinite;
-}
-
-@keyframes cursor-blink {
-  0% {
-    opacity: 0;
-  }
-}
+/* FRONT */
 
 #vanta-canvas {
   align-items: center;
@@ -159,6 +117,25 @@ li::before {
   height: 100vh;
   overflow: hidden;
 }
+
+.front {
+  background: black;
+  top: 45px;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+}
+
+.animation-bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+/* END OF FRONT */
+
+/* HEADER */
 
 .header  {
   position: fixed;
@@ -173,23 +150,10 @@ li::before {
   width: 100%;
   z-index: 100;
   transition: all .3s ease;
-  /* background-color: transparent; */
 }
 
 .header.hide {
   top: -53px;
-}
-
-.front {
-  border: 0px;
-  padding: 0px;
-  border: 0px;
-  background: black;
-  top: 45px;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  align-content: center;
 }
 
 .top_right_header {
@@ -204,28 +168,13 @@ li::before {
   display: flex;
 }
 
-.animation-bg {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-}
+/* END OF HEADER */
 
-.Where-I-Have-Worked {
-  margin: auto;
-  padding-top: 25px;
-  height: 650px;
-  max-width: 1000px;
-}
+/* INTRO */
 
-.Where-I-Have-Worked-content {
-  width: 75%;
-  margin: auto;
-}
-
-.Where-I-Have-Worked-title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+.introduction {
+  padding-left: 10%;
+  padding-top: 18%
 }
 
 .About-me {
@@ -248,10 +197,82 @@ li::before {
   padding-right: 50px;
 }
 
+.skills-list {
+  columns: 200px 2;
+}
+
+/* EMD OF INTRO */
+
+/* WHERE IVE WORKED */
+
+.Where-I-Have-Worked {
+  margin: auto;
+  padding-top: 25px;
+  height: 650px;
+  max-width: 1000px;
+}
+
+.Where-I-Have-Worked-content {
+  width: 75%;
+  margin: auto;
+}
+
+.Where-I-Have-Worked-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* NEW WHERE IVED WORKED */
+
+.section {
+  color: #fff;
+  padding: 2rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.companies-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.company-list {
+  list-style: none;
+  padding: 0;
+}
+
+.company-item {
+  background-color: #222; /* Adjust to match your theme */
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-left: 3px solid transparent; /* Adjust the color to match your theme */
+}
+
+.company-item:hover {
+  background-color: #333; /* Slightly lighter to indicate hover */
+}
+
+.company-details {
+  display: none;
+  max-width: 800px; /* or as much as you need */
+  /* Style the company details here */
+}
+
+/* END WHERE IVE WORKED */
+
 .Featured-Projects {
   padding: 50px 0;
-
 }
+
 img {
   object-fit: cover;
   max-width: 100%;
@@ -333,9 +354,6 @@ button:hover, button:focus {
   z-index: -1;
 }
 
-
-
-
 .description {
   width: 70%;
   display: flex;
@@ -348,6 +366,18 @@ button:hover, button:focus {
   justify-content: space-between;
   align-items: center;
 }
+
+.section {
+  margin-bottom: 2rem; /* Adjust the value as needed */
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;  
+  height: 75px;
+  gap: 20px;
+}
+
 
 @media (max-width: 768px) {
   .Featured-Projects-Card {
@@ -366,10 +396,8 @@ button:hover, button:focus {
   }
 }
 
-.social-media {
-  display: flex;
-  justify-content: center;  
-  height: 75px;
-  gap: 20px;
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
 }
-
